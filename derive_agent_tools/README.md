@@ -1,4 +1,4 @@
-# derive-agent-tools
+# derive_agent_tools
 
 Derive macros to define AI tools and their parameters directly from Rust structs.
 
@@ -9,7 +9,7 @@ Status: Bedrock-only today. Additional tool formats will be added over time.
 
 ## Why
 
-Writing Bedrock tool schemas by hand is repetitive and error‑prone. `derive-agent-tools` lets you define a tool once as a Rust type and get:
+Writing Bedrock tool schemas by hand is repetitive and error‑prone. `derive_agent_tools` lets you define a tool once as a Rust type and get:
 
 - A validated JSON schema (properties + required)
 - A Bedrock `ToolSpecification`
@@ -21,13 +21,13 @@ Add to your Cargo.toml:
 
 ```toml
 [dependencies]
-derive-agent-tools = "0.1"
+derive_agent_tools = "0.1"
 serde = { version = "1", features = ["derive"] }
 ```
 
 ### Features
 
-`derive-agent-tools` exposes two optional capabilities controlled by feature
+`derive_agent_tools` exposes two optional capabilities controlled by feature
 flags. Both of them are enabled by default.
 
 - `serde-json` – builds JSON Schema helpers and requires `serde`/`serde_json`
@@ -40,7 +40,7 @@ pick the subset you need:
 
 ```toml
 [dependencies]
-derive-agent-tools = { version = "0.1", default-features = false, features = ["serde-json"] }
+derive_agent_tools = { version = "0.1", default-features = false, features = ["serde-json"] }
 serde = { version = "1", features = ["derive"] }
 ```
 

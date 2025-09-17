@@ -1,6 +1,6 @@
 [workspace]
 members = [
-  "derive-agent-tools",
-  "derive-agent-tools-macros",
+  "derive_agent_tools",
+  "derive_agent_tools_internals",
 ]
 resolver = "3"

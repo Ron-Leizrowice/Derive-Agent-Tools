@@ -1,13 +1,13 @@
 [package]
-name = "derive-agent-tools"
+name = "derive_agent_tools"
 version = "0.1.0"
 edition = "2024"
 description = "Derive macros for defining AI tools from structs."
 license = "MIT"
 repository = "https://github.com/ron-leizrowice/derive-agent-tools"
 readme = "README.md"
-documentation = "https://docs.rs/derive-agent-tools"
-keywords = ["ai", "agents", "llm", "tools", "mcp", "bedrock", "macros"]
+documentation = "https://crates.io/crates/derive_agent_tools"
+keywords = ["ai", "agents", "llm", "tools", "bedrock"]
 
 [features]
 default = ["serde-json", "bedrock"]
@@ -15,7 +15,7 @@ serde-json = ["dep:serde", "dep:serde_json"]
 bedrock = ["dep:aws-smithy-types", "dep:aws-sdk-bedrockruntime"]
 
 [dependencies]
-derive-agent-tools-macros = { path = "../derive-agent-tools-macros", version = "0.1.0" }
+derive_agent_tools_internals = { path = "../derive_agent_tools_internals", version = "0.1.0" }
 serde = { version = "1", features = ["derive"], optional = true }
 serde_json = { version = "1", optional = true }
 aws-smithy-types = { version = "1", optional = true }

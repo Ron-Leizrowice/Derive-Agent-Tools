@@ -10,7 +10,7 @@ use syn::{
 //
 // `derive_agent_tool` drives the bulk of the code generation. The macro keeps
 // the expansion self-contained so downstream crates only need the
-// `derive-agent-tools` facade crate.
+// `derive_agent_tools` facade crate.
 
 #[proc_macro_derive(AgentTool, attributes(tool))]
 pub fn derive_agent_tool(input: TokenStream) -> TokenStream {

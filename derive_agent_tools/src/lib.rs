@@ -1,4 +1,4 @@
-//! derive-agent-tools
+//! derive_agent_tools
 //!
 //! Single-install facade crate that re-exports the derive macros and provides
 //! hidden re-exports used by macro expansions. Users only add this crate.
@@ -27,7 +27,7 @@
 //! let _schema = WeatherTool::tool_schema_json();
 //! ```
 
-pub use derive_agent_tools_macros::{AgentTool, AgentToolParameter};
+pub use derive_agent_tools_internals::{AgentTool, AgentToolParameter};
 
 #[doc(hidden)]
 pub mod __macro_support {

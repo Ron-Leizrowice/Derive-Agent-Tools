@@ -1,12 +1,11 @@
 [package]
-name = "derive-agent-tools-macros"
+name = "derive_agent_tools_internals"
 version = "0.1.0"
 edition = "2024"
-description = "Proc-macro derives for derive-agent-tools"
+description = "Internal implementation crate for derive_agent_tools"
 license = "MIT"
 repository = "https://github.com/ron-leizrowice/derive-agent-tools"
 readme = "README.md"
-documentation = "https://docs.rs/derive-agent-tools"
 
 [lib]
 proc-macro = true
